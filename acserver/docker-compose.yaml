@@ -1,0 +1,51 @@
+version: "3.7"
+
+services:
+  server-manager-01:
+    container_name: server-manager-01
+    image: seejy/assetto-server-manager:latest
+    ports:
+      # Web
+      - "80:80"
+      # Assetto Server TCP/UDP
+      - "29600:29600"
+      - "29600:29600/udp"
+      # Assetto Server HTTP
+      - "28081:28081"
+      # Content Manager Wrapper
+      - "29700:29700"
+      
+      #stracker
+      - "9642:9642"
+      - "9642:9642/udp"
+      - "50041:50041"
+
+      # kissmyrank
+      # web
+      - "7789:7789"
+      # web admin console
+      - "13000:13000"
+      # Spotter App
+      - "11500:11500"
+      - "11500:11500/udp"
+
+    volumes: 
+      # volume mount the entire server install so that 
+      # content etc persists across restarts
+      - /mnt/sim/content:/home/assetto/server-manager/assetto/content
+      - /mnt/sim/volumemanager01:/home/assetto/server-manager/assetto
+    
+      # volume mount the config
+      - type: bind
+        source: ./config01.yml
+        target: /home/assetto/server-manager/config.yml
+
+      - type: bind
+        source: /mnt/sim/server-manager01.db
+        target: /home/assetto/server-manager/server_manager.db
+
+      - type: bind
+        source: /mnt/sim/server-manager01.log
+        target: /home/assetto/server-manager/server-manager.log
+
+    restart: unless-stopped
