@@ -115,7 +115,21 @@ username: admin
 passowrd: servermanager
 ```
 
-## Step 17: Changing the settings to work properly with your AC Server IP Address.
+## Step 17: Setting Up Tailscale. Open up the Tailscale website on a new browser tab.
+- Create an account if you haven't yet.
+- On the Tailscale website, click on Machines, add a client, then choose the Linux version.
+- Copy the command and run it on your LXC Container.
+- After the installation, run this command:
+```
+sudo tailscale up
+```
+- Copy the link that will appear. And open it on a new browser tab.
+- Sign in into your Tailscale account to add the machine into your list.
+- Copy the Tailscale IP address of the ac-server machine and keep it safe for now.
+- Install the Tailscale Client on your Windows machine/pc as well.
+- Check you machine list, it should list both the ac-server machine and your windows pc. Make sure that both appear as connected.
+
+## Step 18: Changing the settings to work properly with your AC Server IP Address.
 - Go to options
 - In the UDP and TCP Port put: 29600
 - In the HTTP Port put: 28081
@@ -123,4 +137,18 @@ passowrd: servermanager
 - Scroll down to click on "Save".
 > Optional: Change the "Name", "Password", and "Admin Password" as you see fit.
 
-## Step 18: 
+## Step 19: Running a Test race.
+- Click on Quick Race.
+- Choose a track and car.
+- Start Server
+- On the upper left side of the webpage, click on the join button.
+- Click on Join on the newly opened webpage. If promted to open "Content Manager", click it.
+> Notice that the server will not appear and fail to load as the IP address that the ac-server link is using is the CGNAT Public IP address.
+
+## Step 20: Remember the ac-server IP address from Tailscale? We will be using that now.
+- On your Join Link. Replace the IP address at the end of the link with the IP from the Tailscale Machine.
+> Sample Link: https://acstuff.ru/s/q:race/online/join?httpPort=28081&ip=136.xxx.xxx.227  -> change the 136.xxx.xxx.227 into 100.xxx.xxx.1
+- Now try the new link with the Tailscale IP address.
+
+### Enjoy :)
+
