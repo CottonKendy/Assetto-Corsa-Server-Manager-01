@@ -150,5 +150,18 @@ sudo tailscale up
 > Sample Link: https://acstuff.ru/s/q:race/online/join?httpPort=28081&ip=136.xxx.xxx.227  -> change the 136.xxx.xxx.227 into 100.xxx.xxx.1
 - Now try the new link with the Tailscale IP address.
 
-### Enjoy :)
+## Enjoy :)
 
+## Getting other people to join your server
+We will need to share the ac-server machine from Tailscale to other users.
+
+Step 1: Sign in into your Tailscale account.
+
+Step 2: Click on your ac-server machine.
+
+Step 3: Click on share, then choose "Copy Share Link".
+> You can click on reusable link if you plan on sharing it with a lot of friends.
+
+Step 4: Share the link to them, make sure that they already have Tailscale on their Windows Machine and the Tailscale Client is running.
+
+## Enjoy Part 2 :)
