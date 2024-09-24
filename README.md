@@ -10,7 +10,7 @@
 ```
 nano /etc/pve/lxc/[NODEID].conf
 ```
-- Add the code from [LXC.conf](https://github.com/CottonKendy/Assetto-Corsa-Server-Manager-01/edit/main/README.md).
+- Add the code from [LXC.conf](https://github.com/CottonKendy/Assetto-Corsa-Server-Manager-01/blob/main/LXC.conf).
 - Start the LXC container.
 
 ## Step 3: Install Docker.
