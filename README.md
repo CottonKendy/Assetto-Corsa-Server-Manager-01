@@ -35,11 +35,11 @@ sudo touch config01.yml
 ```
 sudo nano docker-compose.yaml
 ```
-- Add the code from [/acserver/docker-composer.yaml](https://github.com/CottonKendy/Assetto-Corsa-Server-Manager-01/edit/main/README.md)
+- Add the code from [/acserver/docker-composer.yaml](https://github.com/CottonKendy/Assetto-Corsa-Server-Manager-01/blob/main/acserver%2Fdocker-compose.yaml)
 ```
 sudo nano config01.yml
 ```
-- Add the code from [/acserver/config01.yml](https://github.com/CottonKendy/Assetto-Corsa-Server-Manager-01/edit/main/README.md)
+- Add the code from [/acserver/config01.yml](https://github.com/CottonKendy/Assetto-Corsa-Server-Manager-01/blob/main/acserver%2Fconfig01.yml)
 
 
 ## Step 7: Go into your mnt directory. And create a new directory named "sim". And CD into it.
