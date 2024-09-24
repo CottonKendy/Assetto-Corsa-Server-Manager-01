@@ -127,7 +127,7 @@ sudo tailscale up
 - Sign in into your Tailscale account to add the machine into your list.
 - Copy the Tailscale IP address of the ac-server machine and keep it safe for now.
 - Install the Tailscale Client on your Windows machine/pc as well.
-- Check you machine list, it should list both the ac-server machine and your windows pc. Make sure that both appear as connected.
+- Check your machine list, it should list both the ac-server machine and your windows pc. Make sure that both appear as connected.
 
 ## Step 18: Changing the settings to work properly with your AC Server IP Address.
 - Go to options
