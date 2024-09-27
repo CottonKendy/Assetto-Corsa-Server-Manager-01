@@ -69,7 +69,7 @@ sudo docker run --entrypoint /bin/sh --volume /mnt/sim/volumemanager01:/data -it
 
 ## Step 11: Run this ***steamcmd*** command.
 ```
-steamcmd +force_install_dir /data +login [steam username] [steam password] +@sSteamCmdPlatformType wimdows +app_update 302550 +quit
+steamcmd +force_install_dir /data +login [steam username] [steam password] +@sSteamCmdPlatformType windows +app_update 302550 +quit
 ```
 > Enter your Steam Guard code if asked. You can get it from your Steam app from your phone.
 ```
